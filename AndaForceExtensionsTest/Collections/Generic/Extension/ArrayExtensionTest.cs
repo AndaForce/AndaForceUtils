@@ -3,7 +3,7 @@ using System.Linq;
 using AndaForceUtils.Collections.Generic.Extension;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Collections.Generic.Extension
+namespace AndaForceExtensionsTest.Collections.Generic.Extension
 {
     [TestFixture]
     public class ArrayExtensionTest

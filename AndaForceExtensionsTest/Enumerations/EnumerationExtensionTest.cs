@@ -5,7 +5,7 @@ using AndaForceUtils.Collections.Generic.Extension;
 using AndaForceUtils.Enumerations;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Enumerations
+namespace AndaForceExtensionsTest.Enumerations
 {
     [TestFixture]
     public class EnumerationExtensionTest

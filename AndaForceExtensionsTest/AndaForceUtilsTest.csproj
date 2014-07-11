@@ -45,22 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests\Collections\Generic\CycledListTest.cs" />
-    <Compile Include="Tests\Collections\Generic\Extension\ArrayExtensionTest.cs" />
-    <Compile Include="Tests\Collections\Generic\Extension\DictionaryExtensionTest.cs" />
-    <Compile Include="Tests\Collections\Generic\Extension\FindClosestValueTest.cs" />
-    <Compile Include="Tests\Collections\Generic\Extension\ListExtensionTest.cs" />
-    <Compile Include="Tests\Collections\Generic\LinearArrayTest.cs" />
-    <Compile Include="Tests\Collections\LinqClone\ClonedLinqCompareMethodsTest.cs" />
-    <Compile Include="Tests\Collections\LinqClone\ClonedLinqSumMethodsTest.cs" />
-    <Compile Include="Tests\DateTime\Extension\DateTimeExtension.cs" />
-    <Compile Include="Tests\DateTime\FluentDateTime\DateAssert.cs" />
-    <Compile Include="Tests\DateTime\FluentDateTime\DateTimeTests.cs" />
-    <Compile Include="Tests\DateTime\FluentDateTime\FluentTimeSpanTests.cs" />
-    <Compile Include="Tests\Enumerations\EnumerationExtensionTest.cs" />
-    <Compile Include="Tests\Math\MathHelperTests.cs" />
-    <Compile Include="Tests\Serialization\ConfigurationLoaderTest.cs" />
-    <Compile Include="Tests\Variables\Extension\IsValueBetweenTest.cs" />
+    <Compile Include="Collections\Generic\CycledListTest.cs" />
+    <Compile Include="Collections\Generic\Extension\ArrayExtensionTest.cs" />
+    <Compile Include="Collections\Generic\Extension\DictionaryExtensionTest.cs" />
+    <Compile Include="Collections\Generic\Extension\FindClosestValueTest.cs" />
+    <Compile Include="Collections\Generic\Extension\ListExtensionTest.cs" />
+    <Compile Include="Collections\Generic\LinearArrayTest.cs" />
+    <Compile Include="Collections\LinqClone\ClonedLinqCompareMethodsTest.cs" />
+    <Compile Include="Collections\LinqClone\ClonedLinqSumMethodsTest.cs" />
+    <Compile Include="DateTime\Extension\DateTimeExtension.cs" />
+    <Compile Include="DateTime\FluentDateTime\DateAssert.cs" />
+    <Compile Include="DateTime\FluentDateTime\DateTimeTests.cs" />
+    <Compile Include="DateTime\FluentDateTime\FluentTimeSpanTests.cs" />
+    <Compile Include="Enumerations\EnumerationExtensionTest.cs" />
+    <Compile Include="Math\MathHelperTests.cs" />
+    <Compile Include="Serialization\ConfigurationLoaderTest.cs" />
+    <Compile Include="Variables\Extension\IsValueBetweenTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

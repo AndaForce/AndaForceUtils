@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.DateTime.FluentDateTime
+namespace AndaForceExtensionsTest.DateTime.FluentDateTime
 {
     public class DateAssert
     {

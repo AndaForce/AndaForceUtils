@@ -2,7 +2,7 @@
 using AndaForceUtils.Collections.Generic;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Collections.Generic
+namespace AndaForceExtensionsTest.Collections.Generic
 {
     [TestFixture]
     public class LinearArrayTest

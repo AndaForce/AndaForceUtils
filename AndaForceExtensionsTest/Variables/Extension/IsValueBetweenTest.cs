@@ -2,7 +2,7 @@
 using AndaForceUtils.Variables.Extension;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Variables.Extension
+namespace AndaForceExtensionsTest.Variables.Extension
 {
     [TestFixture]
     public class IsValueBetweenTest

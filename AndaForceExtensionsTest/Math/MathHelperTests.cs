@@ -1,7 +1,7 @@
 ﻿using AndaForceUtils.Math;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Math
+namespace AndaForceExtensionsTest.Math
 {
     [TestFixture]
     public class MathHelperTests

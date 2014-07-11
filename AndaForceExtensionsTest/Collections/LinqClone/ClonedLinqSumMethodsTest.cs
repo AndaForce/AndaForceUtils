@@ -4,7 +4,7 @@ using AndaForceUtils.Collections.Generic.Extension;
 using AndaForceUtils.Collections.LinqClone;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Collections.LinqClone
+namespace AndaForceExtensionsTest.Collections.LinqClone
 {
     [TestFixture]
     public class ClonedLinqSumMethodsTest

@@ -3,7 +3,7 @@ using System.IO;
 using AndaForceUtils.Serialization;
 using NUnit.Framework;
 
-namespace AndaForceExtensionsTest.Tests.Serialization
+namespace AndaForceExtensionsTest.Serialization
 {
     [TestFixture]
     public class ConfigurationLoaderTest

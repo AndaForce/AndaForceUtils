@@ -49,5 +49,41 @@ namespace AndaForceExtensionsTest.Collections.Generic.Extension
                 Assert.True(testList.Contains(i), String.Format("Result list doesn't contains source item! ({0})", i));
             }
         }
+
+        [Test]
+        public void TestSort()
+        {
+            var list = new List<int> {1, 3, 4, 8, 2, 9, 3, 1, 5};
+            list.QuickSort((a, b) => a.CompareTo(b));
+
+
+            var list2 = new List<SortingClass>()
+            {
+                new SortingClass(1, 2, 3),
+                new SortingClass(1, 2, 2),
+                new SortingClass(1, 1, 1),
+            };
+
+            list2.QuickSort(
+                (first, second) => first.A.CompareTo(second.A),
+                (first, second) => first.B.CompareTo(second.B),
+                (first, second) => first.C.CompareTo(second.C));
+
+            var arfg = 1;
+        }
+
+        internal class SortingClass
+        {
+            public int A;
+            public int B;
+            public int C;
+
+            public SortingClass(int a, int b, int c)
+            {
+                A = a;
+                B = b;
+                C = c;
+            }
+        }
     }
 }

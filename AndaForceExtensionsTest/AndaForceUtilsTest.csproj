@@ -53,7 +53,7 @@
     <Compile Include="Collections\Generic\LinearArrayTest.cs" />
     <Compile Include="Collections\LinqClone\ClonedLinqCompareMethodsTest.cs" />
     <Compile Include="Collections\LinqClone\ClonedLinqSumMethodsTest.cs" />
-    <Compile Include="DateTime\Extension\DateTimeExtension.cs" />
+    <Compile Include="DateTime\Extension\DateTimeExtensionTest.cs" />
     <Compile Include="DateTime\FluentDateTime\DateAssert.cs" />
     <Compile Include="DateTime\FluentDateTime\DateTimeTests.cs" />
     <Compile Include="DateTime\FluentDateTime\FluentTimeSpanTests.cs" />

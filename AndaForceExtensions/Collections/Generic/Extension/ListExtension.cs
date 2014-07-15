@@ -7,6 +7,7 @@ namespace AndaForceUtils.Collections.Generic.Extension
 {
     public static class ListExtension
     {
+        #region Random 
         public static TValue GetRandomItem<TValue>(this List<TValue> list)
         {
             if (list.Count > 0)
@@ -27,7 +28,10 @@ namespace AndaForceUtils.Collections.Generic.Extension
             }
             return default(TValue);
         }
+        #endregion
 
+
+        #region QuckSort
         public static void QuickSort<T>(this List<T> list, params Comparison<T>[] comparisons)
         {
             Sort(list, 0, list.Count - 1, comparisons);
@@ -75,5 +79,6 @@ namespace AndaForceUtils.Collections.Generic.Extension
 
             return i - 1; // Возвращаем индекс центра разделения
         }
+        #endregion
     }
 }

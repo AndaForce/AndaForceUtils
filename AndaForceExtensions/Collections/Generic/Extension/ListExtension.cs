@@ -36,9 +36,9 @@ namespace AndaForceUtils.Collections.Generic.Extension
         private static void Sort<T>(List<T> list, int a, int b, params Comparison<T>[] comparisons)
         {
             if (a >= b) return;
-            int c = Part(list, a, b, comparisons);  // Делим массив на 2, возвращаем индекс центрального элемента
-            Sort(list, a, c - 1, comparisons);      // Сортируем левую половину
-            Sort(list, c + 1, b, comparisons);      // Сортируем правую половину
+            int c = Part(list, a, b, comparisons); // Делим массив на 2, возвращаем индекс центрального элемента
+            Sort(list, a, c - 1, comparisons); // Сортируем левую половину
+            Sort(list, c + 1, b, comparisons); // Сортируем правую половину
         }
 
         private static int Part<T>(List<T> list, int a, int b, params Comparison<T>[] comparisons)
@@ -53,13 +53,23 @@ namespace AndaForceUtils.Collections.Generic.Extension
 
                     // Значение меньше - переносим элемент налево
                     if (compareResult < 0 ||
-                        (compareResult == 0 && comparison == comparisons.Last()))
+                        (compareResult == 0 && comparison == comparisons.Last())) // Значения равны, но компараторы кончились, считаем что структуры равны
                     {
                         T v = list[i];
                         list[i] = list[j];
                         list[j] = v;
                         i++; // Увеличиваем индекс
+
+                        break;
                     }
+                   
+                    // Значение больше - компаратор использован, другие не нужны
+                    if (compareResult > 0)
+                    {
+                        break;
+                    }
+
+                    // compareResult == 0, значения равны, нужен другой компаратор
                 }
             }
 

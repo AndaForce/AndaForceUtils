@@ -9,7 +9,7 @@ namespace AndaForceExtensionsTest.Collections.Generic.Extension
     public class ListExtensionTest
     {
         [Test]
-        public void TestGetRandomItem()
+        public void TestGetRandomItemOnce()
         {
             var list = new List<int> {1, 2, 3, 4, 5};
             var randomItem = list.GetRandomItem();
@@ -18,7 +18,7 @@ namespace AndaForceExtensionsTest.Collections.Generic.Extension
         }
 
         [Test]
-        public void TestGetOneItem()
+        public void TestGetRandomItemFromOneItemList()
         {
             var list = new List<int> {123456789};
 
@@ -26,7 +26,7 @@ namespace AndaForceExtensionsTest.Collections.Generic.Extension
         }
 
         [Test]
-        public void TestEmpty()
+        public void TestGetRandomItemFromEmptyList()
         {
             var list = new List<int>();
 
@@ -34,55 +34,19 @@ namespace AndaForceExtensionsTest.Collections.Generic.Extension
         }
 
         [Test]
-        public void TestSpread()
+        public void TestGetRandomItemManyTimes()
         {
-            var list = new List<int> {1, 2, 3, 4, 5, 6, 7, 8, 9};
-            var testList = new List<int>();
+            var sourceList = new List<int> {1, 2, 3, 4, 5, 6, 7, 8, 9};
+            var resultList = new List<int>();
 
             for (int i = 0; i < 1000; i++)
             {
-                testList.Add(list.GetRandomItem());
+                resultList.Add(sourceList.GetRandomItem());
             }
 
-            foreach (var i in list)
+            foreach (var i in sourceList)
             {
-                Assert.True(testList.Contains(i), String.Format("Result list doesn't contains source item! ({0})", i));
-            }
-        }
-
-        [Test]
-        public void TestSort()
-        {
-            var list = new List<int> {1, 3, 4, 8, 2, 9, 3, 1, 5};
-            list.QuickSort((a, b) => a.CompareTo(b));
-
-
-            var list2 = new List<SortingClass>()
-            {
-                new SortingClass(1, 2, 3),
-                new SortingClass(1, 2, 2),
-                new SortingClass(1, 1, 1),
-            };
-
-            list2.QuickSort(
-                (first, second) => first.A.CompareTo(second.A),
-                (first, second) => first.B.CompareTo(second.B),
-                (first, second) => first.C.CompareTo(second.C));
-
-            var arfg = 1;
-        }
-
-        internal class SortingClass
-        {
-            public int A;
-            public int B;
-            public int C;
-
-            public SortingClass(int a, int b, int c)
-            {
-                A = a;
-                B = b;
-                C = c;
+                Assert.True(resultList.Contains(i), String.Format("Result list doesn't contains item from source! ({0})", i));
             }
         }
     }

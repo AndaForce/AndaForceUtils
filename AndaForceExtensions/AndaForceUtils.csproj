@@ -68,6 +68,7 @@
     <Compile Include="Internal\InternalRandomHelper.cs" />
     <Compile Include="Random\RandomExtension.cs" />
     <Compile Include="Serialization\ConfigurationLoader.cs" />
+    <Compile Include="Variables\Extension\BooleanExtension.cs" />
     <Compile Include="Variables\Extension\IsValueBetween.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
